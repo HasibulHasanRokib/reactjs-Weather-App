@@ -1,0 +1,124 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: #17202A ;
+
+}
+.heading{
+    text-align: center;
+    margin-top: 50px;
+}
+.app-body{
+    height: 60vh;
+    background-color: #273746 ;
+    width: 800px;
+    margin-top: 30px;
+    margin-left: 340px;
+    border-radius: 20px;
+    box-shadow: 5px 5px 15px 15px #333;
+}
+.search{
+    text-align: center;
+    margin-top: 40px;
+}
+
+.input-search{
+    width: 370px;
+    background-color: #fff;
+    padding: 5px;
+    border: none;
+    /* color: #273746; */
+    border-radius: 5px 0 0 5px ;
+    border: 2px solid #17202A;
+}
+.btn-search{
+    padding: 5px;
+    background-color: #5DADE2;
+    border: none;
+    width: 80px;
+    border-radius:0 5px 5px 0;
+}
+.weather-icon{
+    height: 25vh;
+    background-color: #fff;   
+    border-radius: 5px 5px 0px 0px;
+}
+.weather-icon img{
+    width: 150px;
+    margin: 0 320px;
+}
+.weather-info{
+    height: 23vh;
+    text-align: center;
+    background-color: #273746;
+    color: #fff;
+    width: 800px;
+}
+.degree{
+    padding-top: 48px;
+}
+.degree-text{
+    font-size: 2.7rem;
+}
+.weather-location{
+    padding-top: 48px;
+    text-align: start;
+
+}
+.weather-location h5{
+    font-size: 1.8rem;
+}
+.weather-location p{
+    font-weight: lighter;
+}
+.current-date{
+    padding-top: 48px;
+    font-size: 2rem;
+    letter-spacing: 2px;
+    background-color: #5DADE2;
+    
+}
+.weather-more-info{
+    background-color: #fff;
+    height: 15vh;
+    border-radius: 0px 0px 5px 5px;
+    display: flex;
+    /* margin: 10px; */
+    padding-top: 20px;
+}
+.more-info{
+    margin:10px 70px;
+    font-weight: bold;
+}
+@media only screen and (max-width: 600px) {
+    .app-body{
+        width: 400px;
+        margin-left: 0px;
+    }
+    .weather-icon img {
+        width: 150px;
+        margin: 0 100px;
+    }
+    .weather-info{
+        width: 0px;
+    }
+    .degree{
+        padding: 7px;
+    }
+    .weather-location{
+        padding-top: 0px;
+    }
+    .more-info {
+        margin: 5px 15px;
+        font-weight: bold;
+    }
+    .current-date{
+        display: none;
+    }
+    .input-search{
+        width: 272px;
+    }
+  }
