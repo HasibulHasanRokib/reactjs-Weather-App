@@ -33,6 +33,7 @@ body{
     /* color: #273746; */
     border-radius: 5px 0 0 5px ;
     border: 2px solid #17202A;
+    outline: none;
 }
 .btn-search{
     padding: 5px;
@@ -48,24 +49,32 @@ body{
 }
 .weather-icon img{
     width: 150px;
-    margin: 0 320px;
+    margin: 1rem 320px;
 }
 .weather-info{
     height: 23vh;
     text-align: center;
     background-color: #273746;
     color: #fff;
-    width: 800px;
+    /* width: 800px; */
+    display: flex;
+
 }
 .degree{
+    width: 50%;
+    
     padding-top: 48px;
+    /* background-color: aquamarine; */
 }
 .degree-text{
     font-size: 2.7rem;
 }
 .weather-location{
+    width: 50%;
     padding-top: 48px;
-    text-align: start;
+    text-align: center;
+    background-color: #5DADE2;
+    color: #17202A;
 
 }
 .weather-location h5{
@@ -73,6 +82,7 @@ body{
 }
 .weather-location p{
     font-weight: lighter;
+    font-size: 2rem;
 }
 .current-date{
     padding-top: 48px;
@@ -87,11 +97,18 @@ body{
     border-radius: 0px 0px 5px 5px;
     display: flex;
     /* margin: 10px; */
-    padding-top: 20px;
+    /* padding-top: 20px; */
 }
 .more-info{
-    margin:10px 70px;
     font-weight: bold;
+    display: flex;
+    align-items: center;
+    margin: 0 2rem;
+}
+.info-img{
+    width: 50px;
+    height: 35px;
+    margin: 0 1rem;
 }
 @media only screen and (max-width: 600px) {
     .app-body{
@@ -102,18 +119,21 @@ body{
         width: 150px;
         margin: 0 100px;
     }
-    .weather-info{
-        width: 0px;
+    .weather-more-info{
+    display: grid;
+    grid-template-columns: auto auto;
+    height: auto;
     }
     .degree{
-        padding: 7px;
+        /* padding: 7px; */
     }
     .weather-location{
-        padding-top: 0px;
+        /* padding-top: 0px; */
     }
     .more-info {
-        margin: 5px 15px;
+        margin: 15px 15px;
         font-weight: bold;
+        /* flex-direction: column; */
     }
     .current-date{
         display: none;
