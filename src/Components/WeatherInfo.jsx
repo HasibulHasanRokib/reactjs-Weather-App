@@ -19,16 +19,16 @@ useEffect(()=>{
     if(weatherMood){
         switch(weatherMood){
             case "Clouds":
-             setWeatherImage("/src/assets/cloudy.png")
+             setWeatherImage("/src/images/cloudy.png")
              break;
             case "Haze":
-             setWeatherImage("/src/assets/rain.png")
+             setWeatherImage("/src/images/rain.png")
              break;
             case "Drizzle":
-             setWeatherImage("/src/assets/rain.png")
+             setWeatherImage("/src/images/rain.png")
              break;
             case "Clear":
-             setWeatherImage("/src/assets/sun.png")
+             setWeatherImage("/src/images/sun.png")
              break;
              default:
                 break;   
@@ -61,7 +61,7 @@ useEffect(()=>{
        <div className="weather-more-info">
        <div className="more-info">
        <div >
-        <img className="info-img" src="/src/assets/sunrise.png" alt="" srcSet="" />
+        <img className="info-img" src="/src/images/sunrise.png" alt="" srcSet="" />
        </div>
         <div>
         <span>{timeIs}AM</span>
@@ -69,7 +69,7 @@ useEffect(()=>{
         </div>
        </div>
        <div className="more-info">
-       <img className="info-img" src="/src/assets/humidity.png" alt="" srcSet="" />
+       <img className="info-img" src="/src/images/humidity.png" alt="" srcSet="" />
 <div>
 <samp>{humidity}</samp>
         <p>Humidity</p>
@@ -77,7 +77,7 @@ useEffect(()=>{
        
        </div>
        <div className="more-info">
-       <img className="info-img" src="/src/assets/fresh-air.png" alt="" srcSet="" />
+       <img className="info-img" src="/src/images/fresh-air.png" alt="" srcSet="" />
 <div>
 <samp>Pressure</samp>
         <p>{pressure}</p>
@@ -85,7 +85,7 @@ useEffect(()=>{
         
        </div>
        <div className="more-info">
-       <img className="info-img" src="/src/assets/wind-direction.png" alt="" srcSet="" />
+       <img className="info-img" src="/src/images/wind-direction.png" alt="" srcSet="" />
 
        <div>
        <samp>Wind</samp>
