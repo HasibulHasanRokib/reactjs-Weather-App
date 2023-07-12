@@ -1,4 +1,11 @@
 import { useEffect, useState } from "react";
+import Cloudy from '/src/images/cloudy.png' 
+import Rain from '/src/images/rain.png' 
+import Sun from '/src/images/sun.png' 
+import Sunrise from '/src/images/sunrise.png' 
+import Humidity from '/src/images/humidity.png' 
+import Pressure from '/src/images/fresh-air.png' 
+import Wind from '/src/images/wind-direction.png' 
 
 const WeatherInfo = ({items}) => {
  const[weatherImage,setWeatherImage]=useState("")
@@ -19,16 +26,16 @@ useEffect(()=>{
     if(weatherMood){
         switch(weatherMood){
             case "Clouds":
-             setWeatherImage("/src/images/cloudy.png")
+             setWeatherImage(Cloudy)
              break;
             case "Haze":
-             setWeatherImage("/src/images/rain.png")
+             setWeatherImage(Rain)
              break;
             case "Drizzle":
-             setWeatherImage("/src/images/rain.png")
+             setWeatherImage(Rain)
              break;
             case "Clear":
-             setWeatherImage("/src/images/sun.png")
+             setWeatherImage(Sun)
              break;
              default:
                 break;   
@@ -61,7 +68,7 @@ useEffect(()=>{
        <div className="weather-more-info">
        <div className="more-info">
        <div >
-        <img className="info-img" src="/src/images/sunrise.png" alt="" srcSet="" />
+        <img className="info-img" src={Sunrise} alt="" srcSet="" />
        </div>
         <div>
         <span>{timeIs}AM</span>
@@ -69,7 +76,7 @@ useEffect(()=>{
         </div>
        </div>
        <div className="more-info">
-       <img className="info-img" src="/src/images/humidity.png" alt="" srcSet="" />
+       <img className="info-img" src={Humidity} alt="" srcSet="" />
 <div>
 <samp>{humidity}</samp>
         <p>Humidity</p>
@@ -77,7 +84,7 @@ useEffect(()=>{
        
        </div>
        <div className="more-info">
-       <img className="info-img" src="/src/images/fresh-air.png" alt="" srcSet="" />
+       <img className="info-img" src={Pressure} alt="" srcSet="" />
 <div>
 <samp>Pressure</samp>
         <p>{pressure}</p>
@@ -85,7 +92,7 @@ useEffect(()=>{
         
        </div>
        <div className="more-info">
-       <img className="info-img" src="/src/images/wind-direction.png" alt="" srcSet="" />
+       <img className="info-img" src={Wind} alt="" srcSet="" />
 
        <div>
        <samp>Wind</samp>

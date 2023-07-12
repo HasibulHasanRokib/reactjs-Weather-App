@@ -103,7 +103,7 @@ body{
     font-weight: bold;
     display: flex;
     align-items: center;
-    margin: 0 2rem;
+    margin: 0 1.5rem;
 }
 .info-img{
     width: 50px;
