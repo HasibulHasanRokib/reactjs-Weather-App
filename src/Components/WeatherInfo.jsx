@@ -1,6 +1,7 @@
 import { useEffect, useState } from "react";
 import Cloudy from '/src/images/cloudy.png' 
 import Rain from '/src/images/rain.png' 
+import Haze from '/src/images/haze.png' 
 import Sun from '/src/images/sun.png' 
 import Sunrise from '/src/images/sunrise.png' 
 import Humidity from '/src/images/humidity.png' 
@@ -29,7 +30,7 @@ useEffect(()=>{
              setWeatherImage(Cloudy)
              break;
             case "Haze":
-             setWeatherImage(Rain)
+             setWeatherImage(Haze)
              break;
             case "Drizzle":
              setWeatherImage(Rain)
@@ -50,7 +51,7 @@ useEffect(()=>{
        <div className="weather-icon">
        <img src={weatherImage} alt="" srcSet="" />
        </div>
-       <div className="">
+       <div>
         <div className="weather-info">
             <div className="degree">
             <h3 className="degree-text">{temp}&deg;C</h3>

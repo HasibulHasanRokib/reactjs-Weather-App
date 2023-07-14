@@ -5,6 +5,7 @@
 }
 body{
     background-color: #17202A ;
+    overflow: hidden;
 
 }
 .heading{
@@ -18,7 +19,6 @@ body{
     margin-top: 30px;
     margin-left: 340px;
     border-radius: 20px;
-    box-shadow: 5px 5px 15px 15px #333;
 }
 .search{
     text-align: center;
@@ -44,7 +44,7 @@ body{
 }
 .weather-icon{
     height: 25vh;
-    background-color: #fff;   
+    background-color: #475569;   
     border-radius: 5px 5px 0px 0px;
 }
 .weather-icon img{
@@ -110,33 +110,58 @@ body{
     height: 35px;
     margin: 0 1rem;
 }
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 500px) {
     .app-body{
         width: 400px;
         margin-left: 0px;
+        height: auto;
+    
+    }
+    .heading{
+        margin-top: 10px;
     }
     .weather-icon img {
         width: 150px;
         margin: 0 100px;
     }
+    .weather-icon{
+        height: auto;
+        display: grid;
+        grid-template-columns: 30% 0%;
+    }
     .weather-more-info{
     display: grid;
-    grid-template-columns: auto auto;
+    grid-template-columns:45% 45%;
     height: auto;
     }
-    .degree{
-        /* padding: 7px; */
-    }
+  .degree-text{
+    font-size: 2rem;
+  }
+  .degree{
+    /* width: 35%; */
+  }
     .weather-location{
-        /* padding-top: 0px; */
+        padding: 22px;
+        text-align: start;
+    }
+    .weather-location p{
+     font-size: 1.5rem;
+     font-weight: normal;
+     
     }
     .more-info {
         margin: 15px 15px;
         font-weight: bold;
         /* flex-direction: column; */
     }
+    .weather-info{
+        height: auto;
+    }
     .current-date{
         display: none;
+    }
+    .search{
+        margin-top: 10px;
     }
     .input-search{
         width: 272px;
